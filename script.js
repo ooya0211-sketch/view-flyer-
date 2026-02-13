@@ -17,7 +17,7 @@ const stores = [
   {
     name: "イオン高知",
     area: "秦南町",
-    flyer: "https://tokubai.co.jp"
+    flyer: "https://www.aeon.com"
   }
 ];
 
@@ -27,7 +27,7 @@ const sortSelect = document.getElementById("sortSelect");
 
 function displayStores(data) {
   storeList.innerHTML = "";
-  
+
   data.forEach(store => {
     const card = document.createElement("div");
     card.className = "card";
@@ -44,7 +44,7 @@ function displayStores(data) {
 
 function filterAndSort() {
   let filtered = [...stores];
-  
+
   const keyword = searchBox.value.toLowerCase();
   if (keyword) {
     filtered = filtered.filter(store =>
